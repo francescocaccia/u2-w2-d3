@@ -1,0 +1,17 @@
+$font: Arial, sans-serif;
+$fs-sm: 0.8rem;
+$fs-md: 1rem;
+$fs-lg: 2rem;
+$fs-xl: 2.5rem;
+$fs-xxl: 3rem;
+
+
+
+
+
+@mixin title-big(){
+font-size: $fs-xl;
+font-weight: bold;
+font-family: $font;
+
+}

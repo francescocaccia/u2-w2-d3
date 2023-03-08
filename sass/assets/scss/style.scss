@@ -1,0 +1,45 @@
+@import "partials/reset";
+@import "partials/animation";
+@import "partials/buttons";
+@import "partials/colors";
+@import "partials/fonts";
+@import "partials/mixins";
+@import "partials/spacings";
+
+header {
+  nav {
+    img {
+    }
+    ul {
+      li {
+      }
+    }
+  }
+  .container1 {
+    @include fade-in(fade-in, 1s, forwards, 0.1s);
+    .container2 {
+      @include fade-in(fade-in, 1s, forwards, 0.4s);
+      p {
+      }
+      img {
+        @include floating(15px, 0 10px 20px, 1px solid yellow);
+        object-fit: cover;
+        @include fade-in(fade-in, 1s, forwards, 0.8s);
+      }
+    }
+    .buttons {
+      button {
+        @include fade-in(fade-in, 1s, forwards, 1s);
+      }
+    }
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
